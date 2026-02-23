@@ -1,21 +1,14 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_API_URL": "@vite_api_url"
-  },
   "routes": [
     {
-      "src": "^/src/.*",
-      "dest": "/src/$1"
-    },
-    {
-      "src": "/contact",
+      "src": "/contact$",
       "dest": "/contact.html"
     },
     {
-      "src": "/",
-      "dest": "/index.html"
+      "src": "/about$",
+      "dest": "/about.html"
     },
     {
       "src": "/(.*)",
